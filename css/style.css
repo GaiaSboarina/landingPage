@@ -6,14 +6,66 @@
 
 .container {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: linear-gradient(rgb(59, 36, 99), rgb(102, 62, 170));
-    height: 450px;
+    height: 430px;
 }
 
 .container2 {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5F7F9;
+    width: 100%;
+}
+
+.container3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 300px solid transparent;
+}
+
+.container4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url('../immagini/iq-tests-and-intelligence.png'); */
+    background-color: black;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 430px;
+    text-align: center;
+    color: #FAFAFA;
+}
+
+.container5 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5F7F9;
+    width: 100%;
+}
+
+.container6 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container7 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5F7F9;
+    width: 100%;
+}
+
+.container8 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .jumbotron {
@@ -28,12 +80,6 @@
     background-image: url('../immagini/sfondo_sopra.png');
     background-repeat: no-repeat;
 }
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
 .navbar {
     display: flex;
     align-items: center;
@@ -71,7 +117,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px;
+    padding: 65px;
 }
 
 .titolo h3 {
@@ -90,7 +136,7 @@
 }
 
 .loghi {
-    height: 300px;
+    padding: 30px;
 }
 
 .loghi_sponsor {
@@ -100,6 +146,7 @@
 .spiegazione {
     display: flex;
     flex-direction: row;
+    height: 450px;
 }
 
 .paragrafo_best {
@@ -111,13 +158,11 @@
 
 .paragrafo_best h2 {
     color: #7E36F5;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
+    border-top: 10px solid transparent;
 }
 
 .paragrafo_best p {
     color: #81788A;
-    border-bottom: 20px solid transparent;
 }
 
 .card_container {
@@ -160,4 +205,152 @@
 .test_btn:hover {
     background-color: #00E77C;
     transition: 0.5s;
+}
+
+.paragrafo_con_sfondo {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragrafo_con_sfondo h1{
+    border-top: 80px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.paragrafo_con_sfondo h3{
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.paragrafo_con_sfondo button {
+    background-color: transparent;
+    border: 1px solid #FAFAFA;
+    width: 100px;
+    height: 50px;
+    color: #FAFAFA;
+    outline: none;
+}
+
+.paragrafo_con_sfondo button:hover {
+    background-color: #00DC71;
+    border: 1px solid #00DC71;
+}
+
+.official {
+    text-align: center;
+    border-top: 50px solid #F5F7F9;
+}
+
+.trecard {
+    display: flex;
+    flex-direction: row;
+    border: 10px solid transparent;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+ }
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.container_card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.container_card h3 {
+    border-bottom: 50px solid transparent;
+}
+
+.container_card p {
+    width: 80%;
+}
+
+.celebrity {
+    text-align: center;
+    border-top: 50px solid transparent;
+}
+
+.celebrity p {
+    color: #6F7287;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+
+.card_top_15 {
+    display: flex;
+    flex: 3;
+}
+
+.container_card_top {
+    height: 100px;
+    background-color: #42286E;
+    border: 10px solid white;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+ 
+.container_card_top .h3_top {
+    color: white;
+}
+
+.container_card_top p {
+    color: white;
+} 
+
+.improve {
+    text-align: center;
+    border-top: 50px solid transparent;
+}
+
+.improve p{
+    border-top: 50px solid transparent;
+    color: gray;
+}
+
+.trecard2 {
+    display: flex;
+    flex: 3;
+}
+
+.card1 {
+    background-color: green;
+    color: white;
+}
+
+.card1 p{
+    color: white;
+}
+
+.card1_1 {
+    background-color: greenyellow;
+    color: white;
+}
+
+.card1_1 p{
+    color: white;
+}
+
+.card1_2 {
+    background-color: turquoise;
+    color: white;
+}
+
+.card1_2 p{
+    color: white;
+}
+
+.other {
+    text-align: center;
+    border-top: 50px solid transparent;
 }
