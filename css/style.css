@@ -68,6 +68,20 @@
     flex-direction: column;
 }
 
+.container9 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5F7F9;
+    width: 100%;
+}
+
+.container10 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .jumbotron {
     width: 970px;
 }
@@ -133,6 +147,12 @@
     color: #492D7A;
     background-color: white;
     outline: none;
+}
+
+.button:hover {
+    background-color: #00E77C;
+    border: transparent;
+    transition: 0.5s 0.0s;
 }
 
 .loghi {
@@ -314,7 +334,6 @@
 }
 
 .improve p{
-    border-top: 50px solid transparent;
     color: gray;
 }
 
@@ -353,4 +372,47 @@
 .other {
     text-align: center;
     border-top: 50px solid transparent;
+}
+
+.card_other {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    align-items: center;
+    border: 10px solid transparent;
+}
+
+.container_card_other {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    background-color: #F5F7F9;
+    height: 200px;
+  }
+
+.container_card_other h1 {
+    color: #33629A; 
+}
+
+.container_card_other h4 {
+    width: 80%;
+}
+
+.loghi_sponsor2 {
+    width: 16%;
+}
+
+.footer {
+    text-align: center;
+    border-top: 50px solid transparent;
+    color: grey;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    flex: 6;
 }
