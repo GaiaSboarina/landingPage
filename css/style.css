@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: bold,sans-serif;
+    font-weight: 800;
 }
 
 .container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(rgb(59, 36, 99), rgb(102, 62, 170));
+    background: linear-gradient(to left, #000080, #252850);
     height: 430px;
 }
 
@@ -31,13 +32,17 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* background-image: url('../immagini/iq-tests-and-intelligence.png'); */
-    background-color: black;
+    background-image: url('../immagini/iq-tests-and-intelligence.png');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-color: gray;
+    opacity: 80%;
     width: 100%;
     height: 430px;
     text-align: center;
-    color: #FAFAFA;
+    color: black;
+    left: 0;
+    right: 0;
 }
 
 .container5 {
@@ -123,6 +128,7 @@
 .btn span:hover {
     border: none;
     background-color: #4A36F9;
+    color: white;
     transition: 0.5s 0.0s;
 }
 
@@ -151,6 +157,7 @@
 
 .button:hover {
     background-color: #00E77C;
+    color: white;
     border: transparent;
     transition: 0.5s 0.0s;
 }
@@ -161,6 +168,10 @@
 
 .loghi_sponsor {
     width: 19%;
+}
+
+.fa-medal {
+    color: black;
 }
 
 .spiegazione {
@@ -177,12 +188,14 @@
 }
 
 .paragrafo_best h2 {
-    color: #7E36F5;
-    border-top: 10px solid transparent;
+    color: blue;
+    border-top: 30px solid transparent;
+    border-bottom: 10px solid transparent;
 }
 
 .paragrafo_best p {
     color: #81788A;
+    border-bottom: 20px solid transparent;
 }
 
 .card_container {
@@ -190,7 +203,7 @@
     text-align: center;
     height: 330px;
     width: 300px;
-    border: 1px solid black;
+    border: 1px solid gainsboro;
 }
 
 .card_content {
@@ -198,19 +211,32 @@
     width: 300px;
 }
 
+span .immagine_impronta {
+    border: 5px solid transparent;
+}
+
+.immagine_impronta {
+    border: 1px solid black;
+    border-radius: 100px;
+}
+
 .card_content h3 {
-    border: 20px solid transparent;
+    border: 5px solid transparent;
 }
 
 .card_sotto {
     height: 165px;
     background-color: #ECECF2;
     color: #9496A7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card_sotto .paragrafo_card_sotto {
     border-top: 30px solid transparent;
     border-bottom: 10px solid transparent;
+    width: 70%;
 }
 
 .test_btn {
@@ -246,10 +272,10 @@
 
 .paragrafo_con_sfondo button {
     background-color: transparent;
-    border: 1px solid #FAFAFA;
+    border: 1px solid black;
     width: 100px;
     height: 50px;
-    color: #FAFAFA;
+    color: black;
     outline: none;
 }
 
@@ -260,19 +286,20 @@
 
 .official {
     text-align: center;
-    border-top: 50px solid #F5F7F9;
+    border-top: 100px solid #F5F7F9;
 }
 
 .trecard {
     display: flex;
     flex-direction: row;
-    border: 10px solid transparent;
+    border: 50px solid transparent;
 }
 
 .cards {
     display: flex;
     justify-content: space-between;
     background-color: white;
+    width: 90%;
  }
 
 .card:hover {
@@ -285,6 +312,9 @@
   flex-direction: column;
   align-items: center;
   align-content: center;
+  width: 300px;
+  height: 300px;
+  background-color: white;
 }
 
 .container_card h3 {
@@ -309,6 +339,7 @@
 .card_top_15 {
     display: flex;
     flex: 3;
+    flex-direction: row;
 }
 
 .container_card_top {
@@ -317,11 +348,15 @@
     border: 10px solid white;
     width: 50%;
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
 }
  
 .container_card_top .h3_top {
     color: white;
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    
 }
 
 .container_card_top p {
@@ -340,10 +375,27 @@
 .trecard2 {
     display: flex;
     flex: 3;
+    border: 50px solid transparent;
+}
+
+
+.container_card_improve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 300px;
+    height: 300px;
+  }
+
+.container_card_improve p {
+    border: 50px solid transparent;
 }
 
 .card1 {
-    background-color: green;
+    background-image: url('../immagini/train-your-working-memory.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
     color: white;
 }
 
@@ -352,7 +404,9 @@
 }
 
 .card1_1 {
-    background-color: greenyellow;
+    background-image: url('../immagini/relax.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
     color: white;
 }
 
@@ -361,7 +415,9 @@
 }
 
 .card1_2 {
-    background-color: turquoise;
+    background-image: url('../immagini/challenge-yourself.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
     color: white;
 }
 
@@ -379,7 +435,7 @@
     flex-direction: row;
     flex: 2;
     align-items: center;
-    border: 10px solid transparent;
+    border: 50px solid transparent;
 }
 
 .container_card_other {
@@ -406,13 +462,52 @@
 }
 
 .footer {
+    display: flex;
+    align-items: center;
     text-align: center;
+    flex-direction: column;
     border-top: 50px solid transparent;
     color: grey;
+}
+
+.h3_footer {
+    border: 20px solid transparent;
+}
+
+.h3_footer:hover {
+    color: blue;
 }
 
 .social {
     display: flex;
     flex-direction: row;
     flex: 6;
+    border: 20px solid transparent;
+}
+
+i:hover {
+    color: blue;
+}
+
+.navbar_footer {
+    border: 20px solid transparent;
+}
+
+.navbar_footer span:hover {
+    color: black;
+}
+.quality {
+    border: 20px solid transparent;
+}
+
+.copyright {
+    border: 20px solid transparent;
+}
+
+.immagine_quality {
+    width: 50px;
+}
+
+.fa-heart {
+    color: red;
 }
