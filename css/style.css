@@ -1,16 +1,18 @@
 * {
     margin: 0;
-    padding: 0;
-    font-family: bold,sans-serif;
-    font-weight: 800;
+    padding: 0;  
 }
 
 .container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to left, #000080, #252850);
-    height: 430px;
+    background-image: url('../immagini/sfondo_sopra.png'), linear-gradient(125deg,#32325d 0%,#6162b5 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    height: 550px;
 }
 
 .container2 {
@@ -25,7 +27,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-top: 300px solid transparent;
+    padding-top: 150px;
+    background-color: rgb(255, 255, 255);;
 }
 
 .container4 {
@@ -91,14 +94,51 @@
     width: 970px;
 }
 
+.bottone {
+    width: 150px;
+    height: 40px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.bottone:hover {
+    background-color: #6773f1;
+    border: 1px solid #6773f1;
+    transition: 1.0s 0.0s;
+}
+
+.bottone_bianco {
+    width: 200px;
+    height: 60px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: #3b3c74;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.bottone_bianco:hover {
+    background-color: #39d47e;
+    border: 1px solid #39d47e;
+    color: white;
+    transition: 1.0s 0.0s;
+}
+
 .header {
     height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url('../immagini/sfondo_sopra.png');
-    background-repeat: no-repeat;
+    align-items: center;
 }
+
 .navbar {
     display: flex;
     align-items: center;
@@ -113,57 +153,21 @@
     color: #EBE7F3;
 }
 
-.btn {
-    display: flex;
-    align-items: center;
-}
-
-.btn span {
-    color: #EBE7F3;
-    padding: 10px;
-    border: 1px solid #EBE7F3;
-    border-radius: 5px;
-}
-
-.btn span:hover {
-    border: none;
-    background-color: #4A36F9;
-    color: white;
-    transition: 0.5s 0.0s;
-}
-
 .titolo {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 65px;
+    padding: 90px;
 }
 
 .titolo h3 {
     text-align: center;
     padding: 50px;
-    background-image: url('../immagini/sfondo_sopra.png');
-    background-repeat: no-repeat;
-}
-
-.button {
-    height: 50px;
-    width: 150px;
-    color: #492D7A;
-    background-color: white;
-    outline: none;
-}
-
-.button:hover {
-    background-color: #00E77C;
-    color: white;
-    border: transparent;
-    transition: 0.5s 0.0s;
 }
 
 .loghi {
-    padding: 30px;
+    padding: 50px;
 }
 
 .loghi_sponsor {
@@ -289,40 +293,26 @@ span .immagine_impronta {
     border-top: 100px solid #F5F7F9;
 }
 
-.trecard {
-    display: flex;
-    flex-direction: row;
-    border: 50px solid transparent;
-}
-
-.cards {
+.main {
+    width: 1000px;
+    height: 300px;
+    border: 20px solid transparent;
     display: flex;
     justify-content: space-between;
+  }
+  
+.main div {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: white;
-    width: 90%;
- }
-
-.card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.container_card {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  width: 300px;
-  height: 300px;
-  background-color: white;
-}
-
-.container_card h3 {
-    border-bottom: 50px solid transparent;
-}
-
-.container_card p {
+.main p {
     width: 80%;
+    border: 50px solid transparent;
 }
 
 .celebrity {
@@ -372,24 +362,25 @@ span .immagine_impronta {
     color: gray;
 }
 
-.trecard2 {
+.main2 {
+    width: 1000px;
+    height: 300px;
+    border: 20px solid transparent;
     display: flex;
-    flex: 3;
-    border: 50px solid transparent;
-}
-
-
-.container_card_improve {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
+    justify-content: space-between;
+  }
+  
+.main2 div {
     width: 300px;
     height: 300px;
-  }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
-.container_card_improve p {
-    border: 50px solid transparent;
+.main2 p {
+    width: 80%;
+    border: 30px solid transparent;
 }
 
 .card1 {
@@ -397,6 +388,10 @@ span .immagine_impronta {
     background-repeat: no-repeat;
     background-size: contain;
     color: white;
+}
+
+.card1 h3 {
+    border: 10px solid transparent;
 }
 
 .card1 p{
@@ -410,6 +405,10 @@ span .immagine_impronta {
     color: white;
 }
 
+.card1_1 h3 {
+    border: 10px solid transparent;
+}
+
 .card1_1 p{
     color: white;
 }
@@ -421,6 +420,10 @@ span .immagine_impronta {
     color: white;
 }
 
+.card1_2 h3 {
+    border: 10px solid transparent;
+}
+
 .card1_2 p{
     color: white;
 }
@@ -428,33 +431,32 @@ span .immagine_impronta {
 .other {
     text-align: center;
     border-top: 50px solid transparent;
-}
-
-.card_other {
-    display: flex;
-    flex-direction: row;
-    flex: 2;
-    align-items: center;
-    border: 50px solid transparent;
-}
-
-.container_card_other {
-    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    width: 50%;
-    background-color: #F5F7F9;
-    height: 200px;
-  }
-
-.container_card_other h1 {
-    color: #33629A; 
 }
 
-.container_card_other h4 {
-    width: 80%;
+.main3 {
+    width: 800px;
+    height: 250px;
+    border: 20px solid transparent;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.main3 div {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+    text-align: left;
+    background-color: #F5F7F9;
+}
+
+.main3 h1 {
+    color: blue;
 }
 
 .loghi_sponsor2 {
@@ -483,10 +485,6 @@ span .immagine_impronta {
     flex-direction: row;
     flex: 6;
     border: 20px solid transparent;
-}
-
-i:hover {
-    color: blue;
 }
 
 .navbar_footer {
